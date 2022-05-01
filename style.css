@@ -67,16 +67,16 @@ button {
 }
 
 #increment-btn {
-    background: darkgreen;
+    background: #006600;
 }
 #decrement-btn {
-    background: darkred;
+    background: #cc3300;
 }
 
 #save-btn {
-    background: darkblue;
+    background: #000099;
 }
 #reset-btn {
-    background: darkgoldenrod;
+    background: #ffcc00;
 }
 
