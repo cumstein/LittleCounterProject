@@ -1,13 +1,21 @@
 let count = 0
+let saveEl = document.getElementById("save-el")
+let countEl =  document.getElementById("count-el")
 function increment() {
-    count = count + 1
+    count += 1
     setCounter(count)
 }
 function decrement() {
     if(count > 0) {
-        count = count - 1
+        count -= 1
     }
     setCounter(count)
+}
+function save() {
+    let countStr = count + " - "
+    saveEl.innerHTML += countStr
+    countEl.innerHTML = 0
+    count = 0
 }
 function reset() {
     count = 0
@@ -15,5 +23,7 @@ function reset() {
 }
 
 function setCounter(count) {
-    document.getElementById("count-el").innerHTML = count
+    countEl.innerHTML = count
 }
+
+
